@@ -2186,6 +2186,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2607081282910408120, guid: 625ef4a6638f60e49b7f0a588a4abe3c, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607081282910408120, guid: 625ef4a6638f60e49b7f0a588a4abe3c, type: 3}
       propertyPath: Column
       value: 5
       objectReference: {fileID: 0}
@@ -6449,6 +6453,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1372087036}
     m_Modifications:
     - target: {fileID: 3820042477755530124, guid: 27336da03445e1649842dff4022316b9, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820042477755530124, guid: 27336da03445e1649842dff4022316b9, type: 3}
       propertyPath: Column
       value: 1
       objectReference: {fileID: 0}
@@ -6723,7 +6731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Row
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Column
@@ -7768,6 +7776,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1372087036}
     m_Modifications:
     - target: {fileID: 2377014856555009748, guid: ea1ce5f5997b00c4b82f5f090a66d3ed, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377014856555009748, guid: ea1ce5f5997b00c4b82f5f090a66d3ed, type: 3}
       propertyPath: Column
       value: 3
       objectReference: {fileID: 0}
@@ -8667,9 +8679,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhitePawn
       objectReference: {fileID: 0}
+    - target: {fileID: 1291966138976186866, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Row
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
@@ -11227,6 +11243,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372087036}
     m_Modifications:
+    - target: {fileID: 2868672277867609636, guid: 6df4aa670c57f7f468e1a9b11e9659a7, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2868672277867609636, guid: 6df4aa670c57f7f468e1a9b11e9659a7, type: 3}
       propertyPath: Column
       value: 4

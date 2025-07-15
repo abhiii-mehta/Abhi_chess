@@ -81,11 +81,15 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
         SpriteRenderer renderer = highlight.GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
-            renderer.color = isEnemy ? Color.red : Color.green;
+            if (isEnemy)
+                renderer.color = new Color(1f, 0f, 0f, 0.7f);
+            else
+                renderer.color = new Color(0f, 1f, 0f, 1f);
         }
 
         highlight.SetActive(true);
     }
+
     internal void ClearHighlights()
     {
         for (int row = 0; row < 8; row++)

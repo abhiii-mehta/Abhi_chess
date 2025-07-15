@@ -7,8 +7,8 @@ public class Pawn : BasePiece
     {
         List<Vector2Int> moves = new List<Vector2Int>();
 
-        int direction = IsWhite ? -1 : 1;
-        int startRow = IsWhite ? 6 : 1;
+        int direction = IsWhite ? 1 : -1;
+        int startRow = IsWhite ? 1 : 6;
         int nextRow = Row + direction;
 
         if (BoardManager.Instance.IsInsideBoard(nextRow, Column) && board[nextRow, Column] == null)
