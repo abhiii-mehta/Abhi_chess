@@ -6,8 +6,6 @@ using System.Diagnostics.CodeAnalysis;
 public sealed class ChessBoardPlacementHandler : MonoBehaviour
 {
     [SerializeField] private GameObject[] _rowsArray;
-
-    [Header("Highlight Prefabs (not used in this version but kept for reference)")]
     [SerializeField] private GameObject _highlightGreenPrefab;
     [SerializeField] private GameObject _highlightRedPrefab;
 

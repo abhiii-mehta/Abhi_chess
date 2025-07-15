@@ -6885,6 +6885,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372087036}
     m_Modifications:
+    - target: {fileID: 2127684533407140845, guid: 60c1fc302e61a464896e489ab4a9dc4d, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6536571455419915938, guid: 60c1fc302e61a464896e489ab4a9dc4d, type: 3}
       propertyPath: m_Name
       value: WhiteRook (1)
@@ -7223,7 +7227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Row
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Column
@@ -8685,7 +8689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061451593052645881, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
       propertyPath: Row
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ca4c5b2908fa647b397b78ba84fe55, type: 3}
@@ -11245,7 +11249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2868672277867609636, guid: 6df4aa670c57f7f468e1a9b11e9659a7, type: 3}
       propertyPath: Row
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2868672277867609636, guid: 6df4aa670c57f7f468e1a9b11e9659a7, type: 3}
       propertyPath: Column
