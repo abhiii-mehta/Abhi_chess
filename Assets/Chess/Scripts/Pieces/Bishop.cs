@@ -1,0 +1,42 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Bishop : BasePiece
+{
+    public override List<Vector2Int> GetLegalMoves(BasePiece[,] board)
+    {
+        List<Vector2Int> legal = new List<Vector2Int>();
+
+        Vector2Int[] directions = new Vector2Int[]
+        {
+            new Vector2Int(1, 1), new Vector2Int(1, -1),
+            new Vector2Int(-1, 1), new Vector2Int(-1, -1)
+        };
+
+        foreach (Vector2Int dir in directions)
+        {
+            int r = Row + dir.x;
+            int c = Column + dir.y;
+
+            while (BoardManager.Instance.IsInsideBoard(r, c))
+            {
+                BasePiece piece = board[r, c];
+                if (piece == null)
+                {
+                    legal.Add(new Vector2Int(r, c));
+                }
+                else
+                {
+                    if (piece.IsWhite != IsWhite)
+                        legal.Add(new Vector2Int(r, c));
+                    break;
+                }
+
+                r += dir.x;
+                c += dir.y;
+            }
+        }
+
+        return legal;
+    }
+}
