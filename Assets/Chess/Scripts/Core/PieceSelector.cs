@@ -24,8 +24,9 @@ public class PieceSelector : MonoBehaviour
                         BasePiece targetPiece = BoardManager.Instance.GetPieceAt(move.x, move.y);
 
                         bool isEnemy = targetPiece != null && targetPiece.IsWhite != piece.IsWhite;
-                        ChessBoardPlacementHandler.Instance.Highlight(move.x, move.y);
+                        ChessBoardPlacementHandler.Instance.Highlight(move.x, move.y, isEnemy);
                     }
+
                 }
             }
         }
