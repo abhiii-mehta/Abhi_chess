@@ -6,9 +6,13 @@ public class PieceSelector : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
             {
+                Debug.Log($"Hit: {hit.collider.name}");
+
                 BasePiece piece = hit.collider.GetComponent<BasePiece>();
                 if (piece != null && piece.IsWhite)
                 {
@@ -18,14 +22,9 @@ public class PieceSelector : MonoBehaviour
                     foreach (var move in moves)
                     {
                         BasePiece targetPiece = BoardManager.Instance.GetPieceAt(move.x, move.y);
-                        if (targetPiece != null && !targetPiece.IsWhite)
-                        {
-                            ChessBoardPlacementHandler.Instance.Highlight(move.x, move.y);
-                        }
-                        else if (targetPiece == null)
-                        {
-                            ChessBoardPlacementHandler.Instance.Highlight(move.x, move.y);
-                        }
+
+                        bool isEnemy = targetPiece != null && targetPiece.IsWhite != piece.IsWhite;
+                        ChessBoardPlacementHandler.Instance.Highlight(move.x, move.y);
                     }
                 }
             }
